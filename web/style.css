@@ -120,12 +120,14 @@
 
 body {
   margin: 0;
+  font-size: 15px;
 }
 
 main {
   background: linear-gradient(0deg, #f9b26f, #f37947);
   min-height: 100vh;
   display: block;
+  padding: 0 5px;
 }
 
 .text {
@@ -159,6 +161,7 @@ a {
 
 .title {
   padding-top: 3rem;
+  line-height: 1;
 }
 
 .title > p {
@@ -175,17 +178,17 @@ a {
   font-family: Square;
 }
 
-#date,
-#place {
+.date,
+.place {
   color: #6f3129;
 }
 
-#date {
-  font-size: 3em;
+.date {
+  font-size: 2rem;
 }
 
-#place {
-  font-size: 2em;
+.place {
+  font-size: 2rem;
 }
 
 #url {
@@ -226,22 +229,43 @@ footer {
   margin-bottom: -50px;
 }
 
-#email {
+.email {
   grid-area: btn;
 }
 
-#email > a {
+.email > a {
   background-color: #943066;
   color: #ffffff;
   text-decoration: none;
-  padding: 1em;
+  padding: 0.8em 1em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
-#email > a:hover {
+.email > a:hover {
   background-color: #6f3129;
 }
 
 #game-jam,
-#place {
-  margin-bottom: 5vh;
+.place {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .text > p {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .date,
+  .place {
+    font-size: 1.5rem;
+  }
+
+  .visuals img {
+    width: 100%;
+  }
 }
