@@ -119,9 +119,17 @@
 }
 
 body {
+  margin: 0;
+}
+
+main {
   background: linear-gradient(0deg, #f9b26f, #f37947);
   min-height: 100vh;
-  padding: 5%;
+  display: block;
+}
+
+.text {
+  line-height: 1.5;
 }
 
 p,
@@ -132,7 +140,13 @@ a {
   font-weight: 800;
 }
 
-#desc > img {
+.desc {
+  font-size: 2em;
+  color: #a2482f;
+  margin-bottom: 5vh;
+}
+
+.desc > img {
   display: inline;
   width: 1.5em;
   vertical-align: middle;
@@ -141,6 +155,14 @@ a {
 #open,
 #game-jam {
   color: #943066;
+}
+
+.title {
+  padding-top: 3rem;
+}
+
+.title > p {
+  font-weight: 400;
 }
 
 #open {
@@ -162,20 +184,19 @@ a {
   font-size: 3em;
 }
 
-#place,
-#desc {
+#place {
   font-size: 2em;
-}
-
-#desc {
-  color: #a2482f;
 }
 
 #url {
   color: #210300;
 }
 
-#imgs {
+footer {
+  padding-bottom: 3rem;
+}
+
+.visuals {
   margin: auto;
   width: 100%;
   max-width: 500px;
@@ -190,15 +211,19 @@ a {
   justify-items: center;
 }
 
-#img-jam {
-  width: 100%;
+.visuals img {
+  width: 250px;
+}
+
+.img-jam {
   grid-area: jam;
 }
 
-#img-lid {
-  width: 100%;
+.img-lid {
   grid-area: lid;
   transform: rotate(-20deg);
+
+  margin-bottom: -50px;
 }
 
 #email {
@@ -217,7 +242,6 @@ a {
 }
 
 #game-jam,
-#place,
-#desc {
+#place {
   margin-bottom: 5vh;
 }
